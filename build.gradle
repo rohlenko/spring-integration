@@ -838,6 +838,7 @@ project('spring-integration-nats') {
     }
     test {
         forkEvery = 1
+
         //Excluding from standard build complex resilience tests with execution time more then 2 minutes each test.
         //The execution including these test requires double time, that is why the should be considered for nightly build.
         // The test can be additionally executed from IDE or CLI or in nightly build.
